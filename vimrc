@@ -50,7 +50,7 @@ colors deus
 highlight OverError ctermbg=red ctermfg=white guibg=#592929
 match OverError /\s\+$\|\ if(\|\ for(\|\ while(\|\%81v.\+/
 
-" Complexe !!! NEED DOC
+" Complexe
 filetype indent plugin on
 set modeline
 set showcmd
