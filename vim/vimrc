@@ -108,6 +108,9 @@ let g:syntastic_check_on_wq = 0
 
 
 map <F7>s :SyntasticToggleMode<CR>
+map <F5> y
+map <F4> t
+
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}

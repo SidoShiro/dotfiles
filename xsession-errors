@@ -1,0 +1,56 @@
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/sidore_m/.Xauthority
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting LANG=en_US.UTF-8
+dbus-update-activation-environment: setting GDM_LANG=en_US
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting MANDATORY_PATH=/usr/share/gconf/i3.mandatory.path
+dbus-update-activation-environment: setting S_COLORS=auto
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/sidore_m
+dbus-update-activation-environment: setting USER=sidore_m
+dbus-update-activation-environment: setting DESKTOP_SESSION=i3
+dbus-update-activation-environment: setting DEFAULTS_PATH=/usr/share/gconf/i3.default.path
+dbus-update-activation-environment: setting PWD=/home/sidore_m
+dbus-update-activation-environment: setting HOME=/home/sidore_m
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/i3:/usr/share/i3:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=i3
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+dbus-update-activation-environment: setting XDG_CURRENT_DESKTOP=i3
+dbus-update-activation-environment: setting SHLVL=1
+dbus-update-activation-environment: setting LANGUAGE=en_US:en
+dbus-update-activation-environment: setting GDMSESSION=i3
+dbus-update-activation-environment: setting LOGNAME=sidore_m
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting XAUTHORITY=/home/sidore_m/.Xauthority
+dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+dbus-update-activation-environment: setting XDG_CONFIG_DIRS=/etc/xdg/xdg-i3:/etc/xdg/xdg-i3:/etc/xdg
+dbus-update-activation-environment: setting PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+dbus-update-activation-environment: setting _=/usr/bin/dbus-update-activation-environment
+i3status: trying to auto-detect output_format setting
+i3status: auto-detection: parent process is "sh", looking at its parent
+i3status: auto-detected "i3bar"
+  File "/usr/share/wicd/gtk/wicd-client.py", line 83
+    print 'Unable to load tray icon: Missing both egg.trayicon and ' + \
+                                                                   ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(print 'Unable to load tray icon: Missing both egg.trayicon and ' + \)?
+
+** (gnome-terminal.real:1155): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-6rV9G3zaSX: Connection refused
+
+** (gnome-terminal.real:1793): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-6rV9G3zaSX: Connection refused
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSourceOp::Msg___delete__ Route error: message sent to unknown actor ID
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSourceOp::Msg___delete__ Route error: message sent to unknown actor ID
+
+
+** (gnome-terminal.real:2516): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-6rV9G3zaSX: Connection refused
+
+** (gnome-terminal.real:3468): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-6rV9G3zaSX: Connection refused

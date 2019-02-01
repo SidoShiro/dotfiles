@@ -105,6 +105,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias stderred="LD_PRELOAD=/home/sidore_m/stderred/build/libstderred.so\${LD_PRELOAD:+:\$LD_PRELOAD}"
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -133,8 +135,9 @@ alias gitlog='git log --oneline --decorate --tags --graph'
 alias c++='g++ -std=c++17 -pedantic -Wall -Wextra -Werror'
 alias coolretro='./home/sidore_m/cool-retro-term/cool-retro-term'
 alias unity='/home/sidore_m/.unity/opt/Unity/Editor/Unity'
+alias work='git ls-files | xargs -n1 git blame --line-porcelain | sed -n "s/^author //p" | sort -f | uniq -ic | sort -nr'
 
-base16-manager set nord
+base16-manager set materia
 clear
 echo "⚡ Welcome Master ! ⚡"
 echo "⚡TODO LIST :"
@@ -142,3 +145,40 @@ echo "⚡TODO LIST :"
 cat ~/.TODO
 
 export PGDATA="$HOME/postgres_data"
+export PATH=$PATH:/opt/gradle/gradle-4.6/bin
+export JAVA_HOME=/usr/local/java/jdk-9.0.4
+
+export PATH="$HOME/.local/bin:$PATH"
+
+export POSTGRES_USER="neus"
+export POSTGRES_PASSWORD="neus"
+export NEUS_DATABASE_USER="neus"
+export NEUS_DATABASE_PASSWORD="neus"
+
+
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+
+export LD_PRELOAD="/home/sidore_m/stderred/build/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
+
+
+function cdlast () {
+  if [ -f ~/.bash_last_shell_path ] ; then
+    startAt=$(cat ~/.bash_last_shell_path)
+    if [ ! $# -eq 2 ] ; then 
+      echo -e "$1" "$startAt"
+    fi
+    cd $startAt
+  else
+    echo "cd_last_shell: error: .bash_last_shell_path file not found!"
+  fi
+}
+
+function cdat () {
+  builtin cd "$1"
+  echo $PWD > ~/.bash_last_shell_path
+}
+
+# If each terminal start with at lastshellpath leave this:
+cdlast "* cdlast :"
